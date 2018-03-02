@@ -6,11 +6,11 @@ namespace DakiApp.domain.Entities
 {
     public class QuestionarioPerguntasDomain : BaseDomain
     {
-        [ForeignKey("QuestionariosId")]
+        [ForeignKey("QuestionarioId")]
         public QuestionariosDomain Questionario { get; set; }
         public int QuestionarioId { get; set; }
 
-        [ForeignKey("PerguntasId")]
+        [ForeignKey("PerguntaId")]
         public PerguntasDomain Pergunta { get; set; }
         public int PerguntaId { get; set; }
     }

@@ -11,7 +11,7 @@ namespace DakiApp.domain.Entities
         public string Conteudo { get; set; }
 
 
-        [ForeignKey("PerguntasId")]
+        [ForeignKey("PerguntaId")]
         public PerguntasDomain Pergunta { get; set; }
         public int PerguntaId { get; set; }
     }

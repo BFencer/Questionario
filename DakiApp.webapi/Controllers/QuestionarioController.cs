@@ -7,9 +7,9 @@ namespace DakiApp.webapi.Controllers
     [Route("api/[controller]")]
     public class QuestionarioController : Controller
     {
-        private IBaseRepository<QuestionarioDomain> _questionarioRepository;
+        private IBaseRepository<QuestionariosDomain> _questionarioRepository;
 
-        public QuestionarioController(IBaseRepository<QuestionarioDomain> questionarioRepository)
+        public QuestionarioController(IBaseRepository<QuestionariosDomain> questionarioRepository)
         {
             _questionarioRepository = questionarioRepository;
         }
