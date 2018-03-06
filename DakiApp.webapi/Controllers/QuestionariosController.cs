@@ -49,10 +49,7 @@ namespace DakiApp.webapi.Controllers
             //     }).ToArray()
             // };
             // return Ok(projection);
-
-
             var includes = new string[]{ "QuestionarioPerguntas", "QuestionarioPerguntas.Pergunta.Alternativas" };
-
             return Ok(_repo.BuscarPorId(id,includes));
         }
 
