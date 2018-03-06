@@ -32,8 +32,19 @@ namespace DakiApp.repository.Repositories
         {
             try
             {
+                var query = _dbContext.Set<T>().AsQueryable();
+
+                if(includes != null)
+                {
+                    foreach(var include in includes)
+                    {
+                        query = query.Include(include);
+                    }
+                }
+
                 var ChavePrimaria = _dbContext.Model.FindEntityType(typeof(T)).FindPrimaryKey().Properties[0];
-                return _dbContext.Set<T>().FirstOrDefault(e => EF.Property<int>(e, ChavePrimaria.Name) == id);
+
+                return query.FirstOrDefault(e => EF.Property<int>(e, ChavePrimaria.Name) == id);
             }
             catch(Exception ex)
             {

@@ -24,7 +24,6 @@ namespace DakiApp.repository.Context
             modelbuilder.Entity<AlternativasDomain>().ToTable("Alternativas");
             modelbuilder.Entity<QuestionariosDomain>().ToTable("Questionarios");
             modelbuilder.Entity<QuestionarioPerguntasDomain>().ToTable("QuestionarioPerguntas");
-       
             
             base.OnModelCreating(modelbuilder);
         }

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DakiApp.Repository", "DakiApp.Repository\DakiApp.Repository.csproj", "{9B862871-8D2F-4080-A75A-533177172B51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DakiApp.repository", "DakiApp.repository\DakiApp.repository.csproj", "{9B862871-8D2F-4080-A75A-533177172B51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DakiApp.WebApi", "DakiApp.WebApi\DakiApp.WebApi.csproj", "{1D8716D2-B2A6-46B5-AA4C-CD922B59A1AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DakiApp.webapi", "DakiApp.webapi\DakiApp.webapi.csproj", "{1D8716D2-B2A6-46B5-AA4C-CD922B59A1AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DakiApp.Domain", "DakiApp.Domain\DakiApp.Domain.csproj", "{02F429E6-0258-4C06-9C3D-F854FB920C39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DakiApp.domain", "DakiApp.domain\DakiApp.domain.csproj", "{02F429E6-0258-4C06-9C3D-F854FB920C39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

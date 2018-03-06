@@ -10,9 +10,9 @@ namespace DakiApp.domain.Entities
         [StringLength(100)]
         public string Conteudo { get; set; }
 
-
         [ForeignKey("PerguntaId")]
         public PerguntasDomain Pergunta { get; set; }
+        //[Required]
         public int PerguntaId { get; set; }
     }
 }
